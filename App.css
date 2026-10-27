@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+.app {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.countdown-card {
+width: 100%;
+max-width: 650px;
+padding: 35px;
+text-align: center;
+background: white;
+border-radius: 20px;
+box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+color: #5b4bdb;
+font-size: 32px;
+margin-bottom: 10px;
+}
+
+.subtitle {
+color: #666;
+margin-bottom: 30px;
+}
+
+label {
+display: block;
+text-align: left;
+margin: 15px 0 8px;
+font-weight: bold;
+color: #333;
+}
+
+input {
+width: 100%;
+padding: 12px;
+border: 2px solid #ddd;
+border-radius: 8px;
+font-size: 16px;
+outline: none;
+}
+
+input:focus {
+border-color: #764ba2;
+}
+
+h2 {
+color: #764ba2;
+margin-top: 30px;
+overflow-wrap: anywhere;
+}
+
+.timer {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 12px;
+margin-top: 25px;
+}
+
+.time-box {
+background: linear-gradient(135deg, #667eea, #764ba2);
+color: white;
+padding: 20px 8px;
+border-radius: 12px;
+}
+
+.time-box span {
+font-size: 32px;
+font-weight: bold;
+}
+
+.time-box p {
+margin: 8px 0 0;
+font-size: 14px;
+}
+
+.message {
+margin: 25px 0;
+padding: 15px;
+background: #f1edff;
+border-radius: 10px;
+color: #5b4bdb;
+font-weight: bold;
+}
+
+.footer {
+margin-top: 30px;
+color: #777;
+}
+
+@media (max-width: 500px) {
+.countdown-card {
+padding: 20px;
+}
+
+h1 {
+font-size: 25px;
+}
+
+.timer {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.time-box span {
+font-size: 28px;
+}
+}
